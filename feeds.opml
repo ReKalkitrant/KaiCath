@@ -7,7 +7,7 @@
 
 
         <outline text="AnonC" title="AnonC">
-            <outline type="rss" text="AnonC" title="AnonC" xmlUrl="https://www.anonymousconservative.com/blog/feed/" htmlUrl=""/>
+            <outline type="rss" text="AnonC" title="AnonC" xmlUrl="http://www.anonymousconservative.com/blog/feed/" htmlUrl=""/>
         </outline>
 
         <outline text="VoxDay" title="VoxDay">
