@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.0">
+    <head>
+        <title>feedolin</title>
+    </head>
+    <body>
+
+
+        <outline text="AnonC" title="AnonC">
+            <outline type="rss" text="AnonC" title="AnonC" xmlUrl="https://www.anonymousconservative.com/blog/feed/" htmlUrl=""/>
+        </outline>
+
+        <outline text="VoxDay" title="VoxDay">
+            <outline type="rss" text="VoxDay" title="VoxDay" xmlUrl="https://voxday.net/feed/" htmlUrl=""/>
+        </outline>
+
+        <outline text="USCCB Readings" title="USCCB Readings">
+            <outline type="rss" text="USCCB" title="USCCB" xmlUrl="https://bible.usccb.org/readings.rss" htmlUrl=""/>
+        </outline>
+
+
+        <outline text="Crisis Mag" title="Crisis Mag">
+            <outline type="rss" text="Crisis Mag" title="Crisis Mag" xmlUrl="https://feeds.feedburner.com/CrisisMagazine" htmlUrl=""/>
+        </outline>
+
+
+
+
+        <outline text="Philo" title="Philo">
+            <outline type="rss" text="Ed Fesser" title="Ed Fesser" xmlUrl="http://edwardfeser.blogspot.com/feeds/posts/default" htmlUrl=""/>
+            <outline type="rss" text="Rod Dreher" title="Rod Dreher" xmlUrl="https://www.theamericanconservative.com/dreher/feed/" htmlUrl=""/>
+        </outline>
+
+
+
+    </body>
+</opml>
