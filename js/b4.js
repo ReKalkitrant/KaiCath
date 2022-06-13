@@ -11,33 +11,14 @@ var PrayerCounter = 0;
 
 
 
-/* ***** My Stuff ***************/
+/* ***** My Stuff *************/
 
 
 
 
-  // document.onclick = myFunction(event) {alert(event.target.id);}
+
  document.addEventListener('click', (event)=> { 
-  //alert(event.target.id);
-  //document.getElementById("printable_area").innerHTML = event.target.id;
-  //document.getElementById("printable_area2").innerHTML = event.target.id;
 })
-/*
-    document.onclick(this.id) = function() {myFunction()};
-    
-
-    function myFunction() {
-      document.getElementById("printable_area").innerHTML = "Post a thing";
-    }
-*/
-
-
-
-
-//function myFunction() {
-//  document.getElementById("printable_area").innerHTML = "Post a thing"; }
-
-
 
 
 
@@ -56,10 +37,10 @@ window.addEventListener("keyup", e => {
     else if(e.key ==="0"){
         PrayerCounter = 0;
 
-        window.location.replace("b4.html");
+        window.location.replace("p1.html");
 
     }
-    else if(e.key==="2"){
+    else if(e.key==="2" && PrayerCounter < 8){
       buttons[1].style.background = "dark-gray";
     }
     PrintPrayer(PrayerCounter);

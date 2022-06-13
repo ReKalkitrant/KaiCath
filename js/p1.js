@@ -105,12 +105,15 @@ window.addEventListener("keyup", e => {
     else if(e.key==="4"){
      
     window.location.replace("b4.html");
-    alert("4");
+
     }    
     else if(e.key==="5"){
      
       window.location.replace("b5.html");
-      alert("5");
+      }
+    else if(e.key==="6"){
+     
+        window.location.replace("b6.html");
       }
 
   
