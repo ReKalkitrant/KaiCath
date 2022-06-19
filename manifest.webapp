@@ -1,0 +1,13 @@
+{
+  "name": "Catholic Kai Assistant",
+  "description": "An app to help with prayers and first time Mass Goers",
+  "launch_path": "/p1.html",
+  "icons": {
+    "56": "/icons/prayerapp_56.png",
+    "112": "/icons/prayerapp_112.png"
+  },
+  "developer": {
+    "name": "A guy",
+    "url": "https://github.com/ReKalkitrant/KaiCath"
+  }
+}

@@ -11,14 +11,33 @@ var PrayerCounter = 0;
 
 
 
-/* ***** My Stuff *************/
+/* ***** My Stuff ***************/
 
 
 
 
-
+  // document.onclick = myFunction(event) {alert(event.target.id);}
  document.addEventListener('click', (event)=> { 
+  //alert(event.target.id);
+  //document.getElementById("printable_area").innerHTML = event.target.id;
+  //document.getElementById("printable_area2").innerHTML = event.target.id;
 })
+/*
+    document.onclick(this.id) = function() {myFunction()};
+    
+
+    function myFunction() {
+      document.getElementById("printable_area").innerHTML = "Post a thing";
+    }
+*/
+
+
+
+
+//function myFunction() {
+//  document.getElementById("printable_area").innerHTML = "Post a thing"; }
+
+
 
 
 
@@ -28,21 +47,33 @@ window.addEventListener("keyup", e => {
   
   //switch (e.key) {
     //case "ArrowUp":
-    if(e.key === "3") {
+    if((e.key === "3" && PrayerCounter < 8) ||(e.key === 39 && PrayerCounter < 8)) {
         PrayerCounter = PrayerCounter + 1;
     } 
-    else if(e.key === "1" && PrayerCounter > 0){
+    else if((e.key === "1" && PrayerCounter > 0) || (e.key === 37 && PrayerCounter > 0)){
       PrayerCounter = PrayerCounter - 1;
     }
-    else if(e.key ==="0"){
-        PrayerCounter = 0;
 
-        window.location.replace("p1.html");
-
+    if(e.key === "a"|| e.key== 38) {
+        //scroll up
+        window.scrollBy(0,-50);
+    } 
+    else if(e.key === "z" || e.key== 40)
+    {
+      
+        //scroll down
+        window.scrollBy(0,50);
     }
-    else if(e.key==="2" && PrayerCounter < 8){
+    else if(e.key==="2"){
       buttons[1].style.background = "dark-gray";
     }
+    else if(e.key===8){  //Backkey
+        PrayerCounter = 0;
+      }
+      else if(e.key ==="0"){
+        PrayerCounter = 0;
+        window.location.replace("p1.html");
+    }  
     PrintPrayer(PrayerCounter);
 
   

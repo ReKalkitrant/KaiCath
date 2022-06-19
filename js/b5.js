@@ -10,8 +10,8 @@ var MysteryCounter = 0;
 
 const MysteryOffsetArray = [10,0,5,10,15,5,0];
 const DayOfWeek = todayDate.getDay();
-var MysOffSet = 0;
-MysOffSet = MysteryOffsetArray[DayOfWeek];
+var MysOffSet = 10;
+//MysOffSet = MysteryOffsetArray[DayOfWeek];
 
 
 
@@ -40,11 +40,11 @@ window.addEventListener("keyup", e => {
   
   //switch (e.key) {
     //case "ArrowUp":
-    if(e.key === "3" && PrayerCounter < 80) {
+    if((e.key === "3" && PrayerCounter < 80) || (e.key === 39 && PrayerCounter < 80) || (e.key === "SoftRight" && PrayerCounter < 80)) {
         PrayerCounter += 1;
     
     } 
-    else if(e.key === "1" && PrayerCounter > 0){
+    else if((e.key === "1" && PrayerCounter > 0) || (e.key === 37 && PrayerCounter > 0) || (e.key === "SoftLeft" && PrayerCounter > 0)){
       
         PrayerCounter -= 1;
     }
@@ -52,11 +52,23 @@ window.addEventListener("keyup", e => {
         PrayerCounter = 0;
 
         window.location.replace("p1.html");
-
+    }
+    else if(e.key===8 || e.key==="Backspace"){  //Backkey
+        PrayerCounter = 0;
+      }
+    else if(e.key === "a"|| e.key== 38) {
+        //scroll up
+        window.scrollBy(0,-50);
+    } 
+    else if(e.key === "z" || e.key== 40)
+    {
+      
+        //scroll down
+        window.scrollBy(0,50);
     }
 //    console.log(PrayerCounter + "  -  " + PrayerPointerArray[PrayerCounter]);
     //console.log(MysteryOffsetArray[PrayerCounter])
-    console.log(MysOffSet + "   " + DayOfWeek)
+    console.log(MysOffSet + "   " + DayOfWeek + MysteriesArray[MysteryCounter + MysOffSet])
 
 
     PrintPrayer(PrayerPointerArray[PrayerCounter]);
