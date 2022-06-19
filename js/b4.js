@@ -43,10 +43,7 @@ var PrayerCounter = 0;
 
 
 window.addEventListener("keyup", e => {
-    
-  
-  //switch (e.key) {
-    //case "ArrowUp":
+
     if((e.key === "3" && PrayerCounter < 8) ||(e.key === 39 && PrayerCounter < 8)) {
         PrayerCounter = PrayerCounter + 1;
     } 
@@ -54,11 +51,11 @@ window.addEventListener("keyup", e => {
       PrayerCounter = PrayerCounter - 1;
     }
 
-    if(e.key === "a"|| e.key== 38) {
+    else if(e.key === "a"|| e.key === 38) {
         //scroll up
         window.scrollBy(0,-50);
     } 
-    else if(e.key === "z" || e.key== 40)
+    else if(e.key === "z" || e.key === 40)
     {
       
         //scroll down
@@ -67,7 +64,7 @@ window.addEventListener("keyup", e => {
     else if(e.key==="2"){
       buttons[1].style.background = "dark-gray";
     }
-    else if(e.key===8){  //Backkey
+    else if(e.key===8 || e.key==="Backspace"){  //Backkey
         PrayerCounter = 0;
       }
       else if(e.key ==="0"){
