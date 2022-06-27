@@ -1,0 +1,204 @@
+:root {
+  --theme-color: #8500DC;
+  --theme-counter-color: aquamarine;
+  background:black;
+  }
+
+.vanillai-root, .vanillai-root * {
+  font-family: 'Open Sans';
+  margin: 0px;
+  padding: 0;
+}
+
+.vanillai-status-bar-chrome {
+  position: fixed;
+  top: 0;
+  width: 100px;
+  height: 10px;
+  /*background: red;*/
+   background: var(--theme-counter-color); 
+}
+
+.vanillai-status-bar-header-app-scroll {
+  background: var(--theme-color);
+
+}
+
+.vanillai-status-bar-header-app {
+  position: fixed;
+  top: 0px;
+  width: 240px;
+  height: 15px;
+  line-height: 15px;
+  background: var(--theme-color);
+  color: #ffffff;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 50;
+  overflow: hidden;
+}
+
+/*
+.vanillai-status-bar-header-content {
+  width: 100%;
+  height: 27px;
+  line-height: 27px;
+  background: var(--theme-color);
+  color: #ffffff;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 300;
+} */
+.vanillai-content-header-app {
+  position: fixed;
+  top: 15px;
+  bottom: 30px;
+  overflow: hidden;
+}
+
+.vanillai-content-header-content {
+  background: #292929;
+  color: #b988da;
+  top: auto;
+  height: 17px;
+  width: 240px;
+  overflow: auto;
+  font-size: 15px;
+  font-weight: 50;
+}
+
+.vanillai-theme-content-light {
+  background: #b1b1b1;
+  color: #000000;
+  overflow: hidden;
+  font-size: 14px;
+}
+
+.vanillai-theme-content-dark {
+  top: auto;
+  background: #000000;
+  width: 240px;
+  color: #d8d8d8;
+  margin: 2px;
+  overflow: visible;
+  font-size: 14px;
+  float: auto;
+}
+
+.vanillai-theme-content-dark-scroll {
+  top: auto;
+  background: #000000;
+  width: 240px;
+  color: #d8d8d8;
+  margin: 2px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-size: 14px;
+  float: auto;
+}
+
+.body-scroll {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.content-dark-scroll {
+  top: auto;
+  background: #000000;
+  width: 240px;
+  color: #d8d8d8;
+  margin: 2px;
+
+  font-size: 14px;
+  float: auto;
+  height: 200px;
+}
+
+.vanillai-overflow-all {
+  overflow: auto;
+}
+
+.vanillai-overflow-x {
+  overflow-x: auto;
+}
+
+.vanillai-overflow-y {
+  overflow-y: auto;
+}
+
+.vanillai-theme-softkeys-bar-light {
+  background: #dadada;
+  color: #000000;
+}
+
+.vanillai-theme-softkeys-bar-dark {
+  background: #000000;
+  color: #ffffff;
+  padding: 0 3px;
+}
+
+.vanillai-softkeys-bar {
+  box-sizing: border-box;
+  position: fixed;
+  width: 100%;
+  height: 30px;
+  bottom: 0px; 
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+  overflow: hidden;
+}
+
+.vanillai-softkeys-bar * {
+  width: 33.3333333333%;
+  text-overflow: ellipsis;
+}
+
+.vanillai-softkeys-key-left {
+  font-weight: 600;
+  font-size: 14px;
+  text-align: left;
+}
+
+.vanillai-softkeys-key-center {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.vanillai-softkeys-key-right {
+  font-weight: 600;
+  font-size: 14px;
+  text-align: right;
+}
+
+
+.grid-wrapper {
+
+ /* position: fixed;
+  top: 30px;
+  width: 240px;
+  height: 15px;
+  /*line-height: 15px;
+  background: var(--theme-color);
+  color: #ffffff;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 50; */
+
+  display: grid;
+  grid-template-columns: 78px 78px 78px;
+  grid-gap: 3px;
+  background-color: var(--theme-color);
+  color: #444;
+}
+
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 12px;
+  text-align: center;
+
+}
