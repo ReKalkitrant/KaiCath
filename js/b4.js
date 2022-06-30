@@ -46,32 +46,35 @@ window.addEventListener("keyup", e => {
 
     if((e.key === "3" && PrayerCounter < 8) ||(e.key === 39 && PrayerCounter < 8)) {
         PrayerCounter = PrayerCounter + 1;
+        PrintPrayer(PrayerCounter);
     } 
     else if((e.key === "1" && PrayerCounter > 0) || (e.key === 37 && PrayerCounter > 0)){
       PrayerCounter = PrayerCounter - 1;
+      PrintPrayer(PrayerCounter);
     }
 
     else if(e.key === "a"|| e.key === 38) {
         //scroll up
-        window.scrollBy(0,-50);
+        //window.scrollBy(0,-50);
+        document.getElementById("scroll_this").scrollBy(0,-50);
+        console.log("up")
     } 
     else if(e.key === "z" || e.key === 40)
     {
       
         //scroll down
-        window.scrollBy(0,50);
+        document.getElementById("scroll_this").scrollBy(0,50);
+        //window.scrollBy(0,50);
+        console.log("down")
     }
-    else if(e.key==="2"){
-      buttons[1].style.background = "dark-gray";
-    }
-    else if(e.key===8 || e.key==="Backspace"){  //Backkey
+    else if(e.key ===8 || e.key === "Backspace"){  //Backkey
         PrayerCounter = 0;
       }
       else if(e.key ==="0"){
         PrayerCounter = 0;
         window.location.replace("p1.html");
     }  
-    PrintPrayer(PrayerCounter);
+
 
   
 })
@@ -117,9 +120,10 @@ function PrintPrayer(P_num) {
         document.getElementById("printable_area").innerHTML = "Invitation to Communion";
         document.getElementById("printable_area2").innerHTML = "<b>PRIEST</b>: Behold the Lamb of God, behold him who takes away the sins of the world.  Blessed are those called to the supper of the Lamb.<br /><b>ALL</b>: Lord, I am not worthy that you should enter under my roof,  but only say the word and my soul shall be heale";
     }
-    const currentIndex = document.activeElement.tabIndex;
+/*    const currentIndex = document.activeElement.tabIndex;
     const next = currentIndex + move;
     const items = document.querySelectorAll('.items');
     const targetElement = items[next];
     targetElement.focus();
+    */
   }
