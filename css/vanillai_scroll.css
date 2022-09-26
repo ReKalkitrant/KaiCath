@@ -37,6 +37,12 @@
   font-weight: 50;
   overflow: hidden;
 }
+.deselected {
+  background-color:gray;
+}
+.selected {
+  background-color:blue;
+}
 
 /*
 .vanillai-status-bar-header-content {
