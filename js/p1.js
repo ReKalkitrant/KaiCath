@@ -138,25 +138,29 @@ window.addEventListener("keyup", e => {
       //buttons[cursor].style.backgroundColor="blue";
     }
 
-    else if(e.key ==="9"){
+    else if(e.key ==="9" || (e.key===" " && buttons[9].className === "selected")){
         text2.innerHTML = "9 Selected";
     }
     else if(e.key==="2"){
       buttons[1].style.background = "dark-gray";
     }
     // Nav to other pages
-    else if(e.key==="4"){
+    else if(e.key==="4" || (e.key===" " && buttons[4].className === "selected")){
      
     window.location.replace("b4.html");
 
     }    
-    else if(e.key==="5"){
+    else if(e.key==="5" || (e.key===" " && buttons[5].className === "selected")){
      
       window.location.replace("b5.html");
       }
-    else if(e.key==="6"){
+    else if(e.key==="6" || (e.key===" " && buttons[6].className === "selected")){
      
         window.location.replace("b6.html");
+      }
+      else if(e.key==="9" || (e.key===" " && buttons[9].className === "selected")){
+     
+        window.location.replace("b9.html");
       }
 
   
