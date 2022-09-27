@@ -10,4 +10,7 @@
     "name": "A guy",
     "url": "https://github.com/ReKalkitrant/KaiCath"
   }
+  	"dependencies": {
+		"ads-sdk": "1.5.8"
+	}
 }
