@@ -37,12 +37,8 @@
   font-weight: 50;
   overflow: hidden;
 }
-.deselected {
-  background-color:gray;
-}
-.selected {
-  background-color:blue;
-}
+
+
 
 /*
 .vanillai-status-bar-header-content {
@@ -195,12 +191,29 @@
   color: #444;
 }
 
-.box {
+button {
+  display: inline-block;
+  width: 75px;
+  height: 80px;
+  font-size: 14px;
+  
+}
+
+.deselected {
+  background-color:gray;
+}
+.selected {
+  background-color:blue;
+}
+.box1 {
   background-color: #444;
+}
+.box {
+background-color: #444;
   color: #fff;
   border-radius: 5px;
   padding: 20px;
   font-size: 12px;
   text-align: center;
-
 }
+
